@@ -1,5 +1,15 @@
 ########################################################################
+# hub.docker.com/r/gruen/stylus/
 # Stylus task runner
+#
+# Usage
+# docker run --it -rm \
+#     -v [path/to/source/files]:/inputfiles \
+#     -v [path/to/build/files]:/outputfiles \
+#     gruen/stylus \
+#     [stylus options] /inputfiles/[main.styl] \
+#     -o /outputfiles/[style.css]
+# 
 ########################################################################
 
 FROM alpine:3.3
