@@ -38,3 +38,4 @@ docker run -it --rm gruen/stylus --help
 [Stylus website](http://stylus-lang.com/)
 
 #### Issues
+- Process doesn't seem to want to terminate... ```ctrl+c```, ```docker stop [stylus container]```, Neither seem to work. Only luck has been with ```docker kill [stylus container]```
