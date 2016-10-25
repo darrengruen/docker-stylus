@@ -5,7 +5,7 @@ Stylus task runner
 
 ## Usage
 
-```
+```shell
 docker run -it --rm \
     -v [path/to/source/dir]:/inputfiles \
     -v [path/to/build/dir]:/outputfiles \
@@ -17,7 +17,7 @@ docker run -it --rm \
 
 For example, if you want to use watch
 
-```
+```shell
 docker run -it --rm \
     -v [path/to/source/dir]:/inputfiles \
     -v [path/to/build/dir]:/outputfiles \
@@ -29,8 +29,8 @@ docker run -it --rm \
 
 For available options run
 
-```
-docker run -it --rm gruen/stylus --help
+```shell
+docker run -it --rm --name stylus"$(date +%N)" gruen/stylus --help
 ```
 
 ### References
