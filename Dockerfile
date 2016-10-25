@@ -6,7 +6,7 @@
 # docker run --it -rm \
 #     -v [path/to/source/files]:/inputfiles \
 #     -v [path/to/build/files]:/outputfiles \
-#     --name stylus"$(date +%N)
+#     --name stylus"$(date +%N) \
 #     gruen/stylus \
 #     [stylus options] /inputfiles/[main.styl] \
 #     -o /outputfiles/[style.css]
