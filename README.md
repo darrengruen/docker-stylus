@@ -9,6 +9,7 @@ Stylus task runner
 docker run -it --rm \
     -v [path/to/source/dir]:/inputfiles \
     -v [path/to/build/dir]:/outputfiles \
+    --name stylus"$(date +%N)" \
     gruen/stylus \
     [options] /inputfiles/[main].styl \
     -o /outputfiles/[buildname].css
@@ -20,6 +21,7 @@ For example, if you want to use watch
 docker run -it --rm \
     -v [path/to/source/dir]:/inputfiles \
     -v [path/to/build/dir]:/outputfiles \
+    --name stylus"$(date +%N)" \
     gruen/stylus \
     -w /inputfiles/[main].styl \
     -o /outputfiles/[buildname].css
