@@ -14,7 +14,7 @@
 ########################################################################
 FROM node:10.16.3-alpine
 
-RUN npm install -g \
+RUN yarn install -g \
   stylus@0.54.5 \
   && mkdir /home/stylus/inputfiles /home/stylus/outputfiles \
   && adduser -S stylus
