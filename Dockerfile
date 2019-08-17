@@ -14,10 +14,10 @@
 ########################################################################
 FROM node:10.16.3-alpine
 
-RUN yarn install -g \
+RUN yarn global add \
   stylus@0.54.5 \
-  && mkdir /home/stylus/inputfiles /home/stylus/outputfiles \
-  && adduser -S stylus
+  && adduser -S stylus \
+  && mkdir /home/stylus/inputfiles /home/stylus/outputfiles
 
 USER stylus
 
